@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+textarea {
+	resize: none;
+}
+
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	scroll-behavior: smooth;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+input:focus {
+	outline: none;
+}
+
+body {
+	color: #2d334a;
+}
+
+@layer components {
+	/* *::-webkit-scrollbar {
+		@apply w-2;
+	}
+
+	*::-webkit-scrollbar-thumb {
+		@apply bg-[#a9a9a9] rounded-2xl;
+	} */
+
+	.reg-inputs {
+		@apply border rounded-md flex border-light-gray text-xl h-12 justify-between px-3 duration-150 w-full focus:border-[.1rem] focus:shadow-[3px_2.4px_5.8px_#485174] hover:border-[.17rem];
+	}
+
+	.pass-vis {
+		@apply cursor-pointer text-right text-blue-600 hover:text-blue-900;
+	}
+
+	label {
+		@apply text-little-text text-xl;
+	}
+
+	.big-inputs {
+		@apply rounded-2xl min-h-[10rem] py-2 w-[41.9rem];
+	}
+
+	.file-input:hover ~ div {
+		background-color: #b3fffb;
+		transition: 0.2s;
+	}
+
+	h1 {
+		@apply text-[3.44rem] text-center mt-11 mb-8 font-semibold text-title;
+	}
+
+	.accent-btn {
+		@apply px-[4.8rem] py-4 rounded-xl text-little-text text-xl text-center bg-accent hover:bg-tertiary active:bg-active hover:duration-150 duration-200;
+	}
+
+	.little-text-btn {
+		@apply px-[4.8rem] py-4 rounded-xl text-white text-xl text-center bg-little-text hover:text-little-text hover:bg-tertiary active:bg-active hover:duration-150 duration-200;
+	}
+}

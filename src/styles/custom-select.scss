@@ -1,0 +1,100 @@
+.custom-select1,
+.custom-select2 {
+	&__control {
+		background-color: #e3f6f5 !important;
+		border: none !important;
+		border-radius: 15px !important;
+		box-shadow: none !important;
+	}
+
+	&__menu {
+		background-color: #e3f6f5 !important;
+		color: rgba(#000000, 0.6) !important;
+		animation: scaleIn 0.35s ease-in-out;
+		border-radius: 15px !important ;
+		overflow-y: scroll;
+		overflow-x: hidden;
+	}
+
+	&-container {
+		> div {
+			outline: none !important;
+			box-shadow: none !important;
+		}
+
+		&:hover,
+		&--menu-is-open {
+			border-color: #ced4da !important;
+		}
+	}
+
+	&__multi-value__remove {
+		color: rgba(white, 0.8) !important;
+		transition: 0.3s;
+		border-radius: 0 9px 9px 0 !important;
+
+		&:hover {
+			transition: 0.3s;
+			background-color: transparent !important;
+			color: black !important;
+			background-color: rgb(255, 0, 0, 0.7) !important;
+		}
+	}
+
+	&__option {
+		cursor: pointer !important;
+		&--is-focused {
+			transition: 0.2s;
+			background-color: lighten(#656565, 8%) !important;
+			color: lighten(#fff, 8%) !important;
+		}
+	}
+
+	&__multi-value {
+		background-color: #2d334a !important;
+		border-radius: 0.6rem !important;
+	}
+
+	&__multi-value__label {
+		color: #bae8e8 !important;
+		font-size: 80% !important;
+		font-weight: 500;
+	}
+}
+
+.custom-select2 {
+	&__control {
+		border-radius: 5px !important;
+	}
+}
+
+@keyframes scaleIn {
+	0% {
+		opacity: 0;
+		transform: scale(0.9);
+	}
+	50% {
+		opacity: 0.3;
+	}
+	100% {
+		opacity: 1;
+		transform: scale(1);
+	}
+}
+
+.custom-select {
+	&__menu {
+		background-color: #e3f6f5 !important;
+		color: rgba(#000000, 0.6) !important;
+		animation: scaleIn 0.35s ease-in-out;
+		border-radius: 15px !important ;
+		overflow-y: scroll;
+		overflow-x: hidden;
+	}
+}
+
+.price-select {
+	&__control {
+		background-color: transparent !important;
+	}
+}
